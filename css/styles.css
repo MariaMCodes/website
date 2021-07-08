@@ -34,6 +34,9 @@ body {
     background-size: cover;
 }
 
+
+/* Unordered Lists */
+
 nav {
     text-align: center;
 }
@@ -66,9 +69,12 @@ nav ul li a:hover {
 
 #pubs-list {
     list-style-type: disc;
-    padding-left: 57px;
+    padding-left: 97px;
     text-align: left;
 }
+
+
+/* Headings, paragraphs, a links */
 
 h1 {
     font-weight: normal;
@@ -81,19 +87,19 @@ h1 {
 h2 {
     font-size: 30px;
     color: #a5dee5;
-    padding: 60px 40px 40px;
+    padding: 60px 60px 40px;
     text-align: left;
 }
 
 h3 {
     font-size: 20px;
     color: #ece493;
-    padding: 40px;
+    padding: 0 60px 40px;
     text-align: left;
 }
 
 h4 {
-    padding: 0 40px;
+    padding: 0 80px;
     color: #f46060;
     font-weight: normal;
     text-align: left;
@@ -106,7 +112,7 @@ h5 {
 }
 
 p {
-    padding: 0 40px 40px;
+    padding: 0 80px 40px;
     text-align: left;
 }
 
@@ -114,12 +120,18 @@ a {
     color: #eae3c8;
 }
 
+
+/* Dark grey section background */
+
 .bg {
     height: 960px;
     background-color: #393e46;
     background-size: cover;
     text-align: center;
 }
+
+
+/* Home background image and translucent box */
 
 #home-bg {
     margin-left: auto;
@@ -168,6 +180,14 @@ a {
     color: #182952;
 }
 
+
+/* images and click boses */
+
+#click-me {
+    width: 40px;
+    vertical-align: middle;
+}
+
 #download-me {
     border: solid 1px #FFEB99;
     background-color: #393E46;
@@ -182,7 +202,7 @@ a {
 
 #plates {
     float: right;
-    padding: 0 40px;
+    padding: 0 40px 40px;
 }
 
 #breast {
@@ -197,6 +217,11 @@ a {
 
 #alcl-hyp {
     padding: 20px 20px 40px;
+}
+
+#email-icon {
+    float: left;
+    padding-right: 20px;
 }
 
 footer {
