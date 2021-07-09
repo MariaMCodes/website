@@ -116,8 +116,12 @@ p {
     text-align: left;
 }
 
+
+/* Using CSS variables */
+
 a {
-    color: #eae3c8;
+    --color: #eae3c8;
+    color: var(--color);
 }
 
 
@@ -161,7 +165,8 @@ a {
     padding-bottom: 40px;
 }
 
-.blink-me {
+
+/*.blink-me {
     animation: blinker 2s linear infinite;
     font-size: 20px;
     font-weight: normal;
@@ -173,11 +178,33 @@ a {
     10% {
         opacity: 0;
     }
-}
+}*/
 
-.blink-me a {
+
+/*.blink-me a {
     text-decoration: none;
     color: #182952;
+}*/
+
+
+/* applying CSS variables */
+
+.button-gradient {
+    background: linear-gradient(var(--gradientAngle), var(--gradientStart), var(--gradientStop));
+    --gradientAngle: 60deg;
+    --gradientStart: #cccccc;
+    --gradientStop: #f9f9f9;
+    padding: 10px 20px;
+}
+
+.button-gradient a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #182952;
+}
+
+.button-gradient:hover {
+    --gradientAngle: 0deg;
 }
 
 
